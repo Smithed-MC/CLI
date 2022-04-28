@@ -1,0 +1,38 @@
+{
+  "name": "smithed-cli",
+  "version": "0.0.1",
+  "description": "CLI for Smithed",
+  "main": "dist/index.js",
+  "bin": {
+    "smd": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'node' dist/index.js",
+    "start:windows": "nodemon --watch 'src/**/*.ts' --exec \"npx ts-node\" src/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "local": "sudo npm i -g && smd",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4",
+    "@types/readline-sync": "^1.4.4",
+    "@types/semver": "^7.3.9",
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.2.0",
+    "figlet": "^1.5.2",
+    "node-fetch": "^3.2.3",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.10",
+    "semver": "^7.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.27",
+    "nodemon": "^2.0.15"
+  }
+}
