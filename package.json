@@ -15,13 +15,14 @@
     "local": "sudo npm i -g && smd",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
   },
-  "author": "",
+  "author": "Smithed-MC",
   "license": "ISC",
   "dependencies": {
     "@types/clear": "^0.1.2",
     "@types/figlet": "^1.5.4",
     "@types/readline-sync": "^1.4.4",
     "@types/semver": "^7.3.9",
+    "blob-polyfill": "^7.0.20220408",
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
     "commander": "^9.2.0",
@@ -29,7 +30,9 @@
     "node-fetch": "^3.2.3",
     "path": "^0.12.7",
     "readline-sync": "^1.4.10",
-    "semver": "^7.3.7"
+    "semver": "^7.3.7",
+    "smithed-weld": "^0.0.2-3",
+    "web-worker": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.27",
